@@ -1,0 +1,25 @@
+{
+  "name": "exclusive",
+  "version": "1.0.0",
+  "description": "exclusiv figma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tail": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ripa-akter/Exclusive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ripa-akter/Exclusive/issues"
+  },
+  "homepage": "https://github.com/ripa-akter/Exclusive#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "tailwindcss": "^4.0.14"
+  }
+}

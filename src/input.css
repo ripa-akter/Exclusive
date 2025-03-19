@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@theme {
+      --max-width-1170:73.125rem;
+    }
