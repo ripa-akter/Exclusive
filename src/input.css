@@ -1,4 +1,21 @@
 @import "tailwindcss";
 @theme {
+      --font-inter:"Inter", sans-serif;
+      --font-poppins: "Poppins", sans-serif;
       --max-width-1170:73.125rem;
+      --text-60:3.75rem; 
     }
+    li{
+      position: relative;
+      margin-bottom: 10px;
+    }
+    li:hover ul{
+      display: block;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #F5F5F5;
+      top: 100%;
+    }
+    /* ul li ul li{
+      margin-bottom: 10px;
+    } */
