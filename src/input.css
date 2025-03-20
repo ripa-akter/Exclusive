@@ -3,7 +3,9 @@
       --font-inter:"Inter", sans-serif;
       --font-poppins: "Poppins", sans-serif;
       --max-width-1170:73.125rem;
-      --text-60:3.75rem; 
+      --text-60:3.75rem;
+      --background-color-primary:#F5F5F5;
+      
     }
     li{
       position: relative;
