@@ -4,8 +4,10 @@
       --font-poppins: "Poppins", sans-serif;
       --max-width-1170:73.125rem;
       --text-60:3.75rem;
-      --background-color-primary:#F5F5F5;
+      --color-primary:#F5F5F5;
+      --color-secondary:#DB4444;
       --margin-top:-250px;
+      
     }
     li{
       position: relative;
