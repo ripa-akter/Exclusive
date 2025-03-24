@@ -4,6 +4,7 @@
       --font-poppins: "Poppins", sans-serif;
       --max-width-1170:73.125rem;
       --text-60:3.75rem;
+      --text-32:2rem;
       --color-primary:#F5F5F5;
       --color-secondary:#DB4444;
       --margin-top:-250px;
@@ -20,6 +21,7 @@
       background-color: #F5F5F5;
       top: 100%;
     }
-    /* ul li ul li{
-      margin-bottom: 10px;
-    } */
+    .cart-img:hover + .cart{
+      display: block !important;
+      transition: all 0.4s;
+    }
