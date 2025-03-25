@@ -25,3 +25,9 @@
       display: block !important;
       transition: all 0.4s;
     }
+    .categori:hover .categori-card{
+      color: white;
+    }
+    .categori:hover .categori-img{
+      color: white;
+    }
