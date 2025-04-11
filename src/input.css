@@ -25,9 +25,13 @@
       display: block !important;
       transition: all 0.4s;
     }
-    .categori:hover .categori-card{
+    .categori:hover .categori-card h3{
       color: white;
     }
-    .categori:hover .categori-img{
+    .active-categori .active{
+      border: none;
+      background-color:#DB4444 ;
+    }
+    .active-categori .active h3{
       color: white;
     }

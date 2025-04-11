@@ -6,7 +6,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(0.637 0.237 25.331);
+    --color-red-400: oklch(0.704 0.191 22.216);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -25,8 +25,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
     --default-font-variation-settings: var(
@@ -196,9 +194,6 @@
   .relative {
     position: relative;
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\.5 {
     top: calc(var(--spacing) * 1.5);
   }
@@ -216,9 +211,6 @@
   }
   .top-13 {
     top: calc(var(--spacing) * 13);
-  }
-  .right-1 {
-    right: calc(var(--spacing) * 1);
   }
   .right-1\.5 {
     right: calc(var(--spacing) * 1.5);
@@ -240,9 +232,6 @@
   }
   .mx-auto {
     margin-inline: auto;
-  }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
   }
   .mt-3\.5 {
     margin-top: calc(var(--spacing) * 3.5);
@@ -286,9 +275,6 @@
   .ml-13 {
     margin-left: calc(var(--spacing) * 13);
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -300,12 +286,6 @@
   }
   .inline {
     display: inline;
-  }
-  .table {
-    display: table;
-  }
-  .h-8 {
-    height: calc(var(--spacing) * 8);
   }
   .h-8\.5 {
     height: calc(var(--spacing) * 8.5);
@@ -319,9 +299,6 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
-  }
   .w-8\.5 {
     width: calc(var(--spacing) * 8.5);
   }
@@ -334,17 +311,8 @@
   .max-w-1170 {
     max-width: var(--max-width-1170);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .rotate-90 {
     rotate: 90deg;
-  }
-  .resize {
-    resize: both;
-  }
-  .grid-flow-col {
-    grid-auto-flow: column;
   }
   .grid-flow-row {
     grid-auto-flow: row;
@@ -546,8 +514,8 @@
   .text-black {
     color: var(--color-black);
   }
-  .text-red-500 {
-    color: var(--color-red-500);
+  .text-red-400 {
+    color: var(--color-red-400);
   }
   .text-secondary {
     color: var(--color-secondary);
@@ -557,15 +525,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .hover\:border-white {
     &:hover {
@@ -581,29 +540,21 @@
       }
     }
   }
+  .hover\:stroke-white {
+    &:hover {
+      @media (hover: hover) {
+        stroke: var(--color-white);
+      }
+    }
+  }
   .md\:mt-5 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 5);
     }
   }
-  .md\:grid-cols-2 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .md\:grid-rows-2 {
-    @media (width >= 48rem) {
-      grid-template-rows: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .md\:grid-rows-3 {
-    @media (width >= 48rem) {
-      grid-template-rows: repeat(3, minmax(0, 1fr));
     }
   }
   .md\:flex-row {
@@ -631,29 +582,9 @@
       width: calc(var(--spacing) * 230);
     }
   }
-  .lg\:grid-flow-col {
-    @media (width >= 64rem) {
-      grid-auto-flow: column;
-    }
-  }
-  .lg\:grid-flow-row {
-    @media (width >= 64rem) {
-      grid-auto-flow: row;
-    }
-  }
-  .lg\:grid-cols-1 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
   .lg\:grid-cols-6 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-rows-1 {
-    @media (width >= 64rem) {
-      grid-template-rows: repeat(1, minmax(0, 1fr));
     }
   }
   .lg\:flex-row {
@@ -702,10 +633,14 @@ li:hover ul {
   display: block !important;
   transition: all 0.4s;
 }
-.categori:hover .categori-card {
+.categori:hover .categori-card h3 {
   color: white;
 }
-.categori:hover .categori-img {
+.active-categori .active {
+  border: none;
+  background-color: #DB4444;
+}
+.active-categori .active h3 {
   color: white;
 }
 @property --tw-border-style {
@@ -716,9 +651,4 @@ li:hover ul {
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
