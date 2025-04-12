@@ -7,7 +7,7 @@
       --text-32:2rem;
       --color-primary:#F5F5F5;
       --color-secondary:#DB4444;
-      --margin-top:-250px;
+      --margin-top:-245px;
       
     }
     li{
@@ -27,6 +27,9 @@
     }
     .categori:hover .categori-card h3{
       color: white;
+    }
+    .categori:hover .categori-card svg{
+      stroke: white;
     }
     .active-categori .active{
       border: none;
