@@ -279,6 +279,9 @@
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
@@ -458,9 +461,6 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
-  .stroke-20 {
-    stroke-width: 20;
-  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -628,6 +628,11 @@
       margin-top: var(--margin-top);
     }
   }
+  .lg\:mb-0 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:ml-\[-230px\] {
     @media (width >= 64rem) {
       margin-left: -230px;
@@ -651,6 +656,11 @@
   .lg\:w-230 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 230);
+    }
+  }
+  .lg\:w-auto {
+    @media (width >= 64rem) {
+      width: auto;
     }
   }
   .lg\:grid-cols-6 {
@@ -723,7 +733,7 @@ li:hover ul {
 .categori:hover .categori-card h3 {
   color: white;
 }
-.categori:hover .categori-card svg {
+.categori:hover .categori-card .categori-img {
   stroke: white;
 }
 .active-categori .active {

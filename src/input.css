@@ -28,7 +28,7 @@
     .categori:hover .categori-card h3{
       color: white;
     }
-    .categori:hover .categori-card svg{
+    .categori:hover .categori-card .categori-img{
       stroke: white;
     }
     .active-categori .active{
