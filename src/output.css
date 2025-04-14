@@ -264,6 +264,9 @@
   .mt-15 {
     margin-top: calc(var(--spacing) * 15);
   }
+  .mt-18 {
+    margin-top: calc(var(--spacing) * 18);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
@@ -278,6 +281,9 @@
   }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
@@ -333,14 +339,23 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
   .w-8\.5 {
     width: calc(var(--spacing) * 8.5);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-12 {
     width: calc(var(--spacing) * 12);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
   .w-75 {
     width: calc(var(--spacing) * 75);
@@ -431,9 +446,6 @@
     border-left-style: var(--tw-border-style);
     border-left-width: 1px;
   }
-  .border-black {
-    border-color: var(--color-black);
-  }
   .border-neutral-300 {
     border-color: var(--color-neutral-300);
   }
@@ -479,6 +491,9 @@
   .px-21 {
     padding-inline: calc(var(--spacing) * 21);
   }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -497,11 +512,20 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
   .py-9 {
     padding-block: calc(var(--spacing) * 9);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -584,6 +608,58 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .before\:h-10 {
+    &::before {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 10);
+    }
+  }
+  .before\:w-5 {
+    &::before {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 5);
+    }
+  }
+  .before\:rounded {
+    &::before {
+      content: var(--tw-content);
+      border-radius: 0.25rem;
+    }
+  }
+  .before\:bg-secondary {
+    &::before {
+      content: var(--tw-content);
+      background-color: var(--color-secondary);
+    }
+  }
+  .before\:content-\[\'\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+  }
+  .before\:content-\[\'ThisMonth\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: 'ThisMonth';
+      content: var(--tw-content);
+    }
+  }
+  .before\:content-\[\'tgf\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: 'tgf';
+      content: var(--tw-content);
+    }
+  }
+  .before\:content-\[\'tgfyhrt\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: 'tgfyhrt';
+      content: var(--tw-content);
+    }
+  }
   .hover\:border-white {
     &:hover {
       @media (hover: hover) {
@@ -603,6 +679,11 @@
       margin-top: calc(var(--spacing) * 5);
     }
   }
+  .md\:mb-20 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 20);
+    }
+  }
   .md\:w-auto {
     @media (width >= 48rem) {
       width: auto;
@@ -618,9 +699,24 @@
       flex-direction: row;
     }
   }
+  .md\:py-10 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:py-20 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 20);
+    }
+  }
   .lg\:mt-0 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:mt-3\.5 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 3.5);
     }
   }
   .lg\:mt-top {
@@ -631,6 +727,11 @@
   .lg\:mb-0 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:mb-20 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 20);
     }
   }
   .lg\:ml-\[-230px\] {
@@ -756,4 +857,9 @@ li:hover ul {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
 }
