@@ -31,7 +31,10 @@
     .categori:hover .categori-card h3{
       color: white;
     }
-    .categori:hover .categori-card .categori-img{
+    .categori:hover .categori-card .categori-img path{
+      stroke: white;
+    }
+    .categori:hover .categori-card .categori-img line{
       stroke: white;
     }
     .active-categori .active{
@@ -39,5 +42,18 @@
       background-color:#DB4444 ;
     }
     .active-categori .active h3{
+      color: white;
+    }
+   
+    .count:hover .count-img circle{
+      fill: white;
+    }
+    .count:hover .count-img path{
+      stroke: black;
+    }
+    .count:hover h3{
+      color: white;
+    }
+    .count:hover p{
       color: white;
     }
