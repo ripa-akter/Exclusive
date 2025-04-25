@@ -9,9 +9,9 @@
       --color-secondary:#DB4444;
       --color-green: rgba(0, 255, 102, 1);
       --color-black-rgb:rgba(0, 0, 0, 1);
-
       --margin-top:-245px;
-      
+      --shadow-out: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+
     }
     li{
       position: relative;
@@ -56,4 +56,8 @@
     }
     .count:hover p{
       color: white;
+    }
+    /* product page */
+    .love:hover svg path{ 
+      stroke: white;
     }
